@@ -28,14 +28,40 @@ This file tracks progress in learning, important concepts, notes, and questions 
 
 ### 🗺️ Workflow with Roadmap and Session Notes
 
-#### At the beginning of each session:
-1. **Read latest session notes** from `docs/sessions/`
+#### At the beginning of each session (MANDATORY STEPS):
+1. **Read claude.md** (this file) - review workflow and guidelines
+2. **Read roadmap.md** - check current phase and overall priorities
+3. **Read latest session notes** from `docs/sessions/session-XX-YYYY-MM-DD.md`
    - What was done, what decisions were made, what blockers exist
    - Review "Next Session" section for continuity
-2. **Check roadmap.md**
-   - What is the current task/priority
-   - Has anything changed since last session
-3. **Ensure continuity** - Avoid repeating completed work
+   - Extract "Key Takeaways" from last session
+4. **Present Quick Recap** to user (5 minutes):
+   - Show key concepts learned in previous session
+   - Explain how today's work builds on it
+   - **Check understanding with quick questions:**
+     - Example: "Remember what `tsconfig.json` does?"
+     - Example: "Can you explain the difference between dependencies and devDependencies?"
+     - **Why:** Active recall = better memory! 🧠
+   - Ask if any questions before starting
+   - **Format:**
+     ```
+     📖 Last Session Recap (Session X):
+
+     You learned:
+     1. [Key concept 1]
+     2. [Key concept 2]
+     3. [Key concept 3]
+
+     Quick check - can you explain:
+     - [Question about key concept]?
+
+     Today we'll build on this by:
+     - [Next step 1]
+     - [Next step 2]
+
+     Ready to start?
+     ```
+5. **Start working** - proceed with planned tasks
 
 #### During work:
 1. **Read before editing** - Always read files before making changes
