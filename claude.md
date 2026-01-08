@@ -1,197 +1,119 @@
 # 📝 Learning Journal - Playwright Automation Framework
 
-## 🎯 Cel tego dokumentu
-Ten plik śledzi postępy w nauce, ważne koncepcje, notatki i pytania podczas budowania projektu automatyzacji testów.
+## 🎯 Purpose of This Document
+This file tracks progress in learning, important concepts, notes, and questions while building the test automation project.
 
-**Podział odpowiedzialności:**
-- 🤖 **Claude**: Dokumentuje fakty, wyjaśnienia techniczne, odpowiedzi na pytania
-- 👤 **Ty**: Wypełniasz refleksje, Key Takeaways, wyzwania (swoimi słowami!)
-
----
-
-## 🎓 Jak Pracujemy - Zasady Nauki
-
-### 🎯 ZŁOTA ZASADA: Kod + Wyjaśnienie = Razem, Zawsze
-**Learning by Doing z Kontekstem**
-- ✅ **ROBIMY:** Wyjaśnienia INLINE jako komentarze w kodzie
-- ❌ **NIE ROBIMY:** Teoria osobno, potem kod
-- ❌ **NIE ROBIMY:** Kod najpierw, wyjaśnienie potem
-- 🎓 **DLACZEGO:** Uczysz się PISZĄC ze zrozumieniem, nie czytając teorię a potem implementując
-- Integrujemy wyjaśnienia, analogie i "dlaczego" bezpośrednio w każdym kroku
-
-### 💬 Styl Komunikacji
-**Szczerość > Zgoda**
-- **Kwestionuję złe pomysły** - Jeśli Twój approach nie jest optymalny, powiem dlaczego z uzasadnieniem
-- **Oferuję alternatywy** - Nawet gdy Twój pomysł jest dobry, pokażę inne równie dobre opcje
-- **Nie wzmacniam błędów** - Nie potwierdzam czegoś tylko dlatego że w to wierzysz
-- **Szanuję ostateczną decyzję** - Po dyskusji, Twój wybór jest wiążący
-
-### 🗺️ Workflow z Roadmap i Session Notes
-
-#### Na początku każdej sesji:
-1. **Czytam ostatnie session notes** z `docs/sessions/`
-   - Co zostało zrobione, jakie decyzje, jakie blokery
-   - Przeglądam sekcję "Next Session" dla kontynuacji
-2. **Sprawdzam roadmap.md**
-   - Jaki jest aktualny task/priorytet
-   - Czy coś się zmieniło od ostatniej sesji
-3. **Zapewniam kontynuację** - Unikam powtarzania ukończonej pracy
-
-#### Podczas pracy:
-1. **Read before editing** - Zawsze czytam pliki przed wprowadzeniem zmian
-2. **Follow existing patterns** - Dostosowuję się do stylu i konwencji kodu w projekcie
-3. **Check the roadmap** - roadmap.md zawiera aktualne priorytety
-4. **NIGDY nie pomijam tasków z roadmapy** bez Twojego pozwolenia
-5. **Jeśli task niejasny** - PYTAM przed rozpoczęciem (nie zgaduję)
-6. **Jeśli task wydaje się błędny** - KWESTIONUJĘ z uzasadnieniem
-
-#### Na końcu sesji:
-1. **Tworzę session notes** w `docs/sessions/session-XX-YYYY-MM-DD.md`
-2. **Aktualizuję roadmap.md** z completion notes
-3. **Aktualizuję claude.md** z Q&A i notatkami
-
-### ✋ Wykonywanie Komend
-- **ZAWSZE pytam przed wykonaniem** komendy (chyba że to tylko odczyt plików/sprawdzanie statusu)
-- **TY wpisujesz i wykonujesz** komendy - uczysz się w praktyce
-- Wyjątek: czysto informacyjne komendy (read files, git status, ls)
+**Division of responsibilities:**
+- 🤖 **Claude**: Documents facts, technical explanations, answers to questions
+- 👤 **You**: Fill in reflections, Key Takeaways, challenges (in your own words!)
 
 ---
 
-## 📅 Session Log
+## 🎓 How We Work - Learning Guidelines
 
-### Session 1 - [2026-01-07] - Project Setup & Planning
+### 🎯 GOLDEN RULE: Code + Explanation = Together, Always
+**Learning by Doing with Context**
+- ✅ **WE DO:** Explanations INLINE as comments in code
+- ❌ **WE DON'T:** Theory separately, then code
+- ❌ **WE DON'T:** Code first, explanation later
+- 🎓 **WHY:** You learn by WRITING with understanding, not reading theory then implementing
+- We integrate explanations, analogies, and "why" directly into each step
 
-#### 🎯 Co planujemy osiągnąć dzisiaj:
-1. Zrozumienie struktury projektu i roadmapy
-2. Utworzenie dokumentacji projektu (roadmap.md, claude.md, README.md)
-3. Inicjalizacja projektu Node.js z TypeScript
-4. Instalacja i konfiguracja Playwright
-5. Utworzenie podstawowej struktury folderów
+### 💬 Communication Style
+**Honesty > Agreement**
+- **I challenge bad ideas** - If your approach isn't optimal, I'll say why with justification
+- **I offer alternatives** - Even when your idea is good, I'll show other equally valid options
+- **I don't reinforce errors** - I won't confirm something just because you believe it
+- **I respect final decisions** - After discussion, your choice is binding
 
-#### 📚 Nowe koncepty do nauki:
-- [ ] **package.json** - co to jest i dlaczego potrzebujemy
-- [ ] **TypeScript configuration** - tsconfig.json i jego rola
-- [ ] **Playwright configuration** - playwright.config.ts
-- [ ] **Node modules** - jak działa npm/node_modules
-- [ ] **Struktura projektu** - dlaczego separujemy testy/pages/fixtures
+### 🗺️ Workflow with Roadmap and Session Notes
 
-#### 🔍 Pytania i odpowiedzi:
+#### At the beginning of each session:
+1. **Read latest session notes** from `docs/sessions/`
+   - What was done, what decisions were made, what blockers exist
+   - Review "Next Session" section for continuity
+2. **Check roadmap.md**
+   - What is the current task/priority
+   - Has anything changed since last session
+3. **Ensure continuity** - Avoid repeating completed work
 
-**Q: Co to jest package.json?**
-A: To "certyfikat tożsamości" projektu Node.js. Zawiera:
-- Nazwę i wersję projektu
-- Listę dependencies (pakietów które projekt potrzebuje)
-- Scripts (komendy które możemy uruchomić)
-- Metadane (autor, licencja, keywords)
-Analogia: package.json = przepis na ciasto (lista składników i instrukcje)
+#### During work:
+1. **Read before editing** - Always read files before making changes
+2. **Follow existing patterns** - Adapt to code style and conventions in the project
+3. **Check the roadmap** - roadmap.md contains current priorities
+4. **NEVER skip tasks from roadmap** without your permission
+5. **If task unclear** - ASK before starting (don't guess)
+6. **If task seems wrong** - CHALLENGE with justification
 
-**Q: Czym różnią się dependencies od devDependencies?**
-A:
-- dependencies = pakiety potrzebne żeby aplikacja DZIAŁAŁA w produkcji
-- devDependencies = pakiety potrzebne tylko do DEVELOPMENTU (testowanie, kompilacja)
-Instalacja: npm install pakiet (dependencies) vs npm install -D pakiet (devDependencies)
-W naszym projekcie wszystko to dev tools, więc używamy -D
+#### At end of session:
+1. **Create session notes** in `docs/sessions/session-XX-YYYY-MM-DD.md`
+2. **Update roadmap.md** with completion notes
+3. **Update claude.md** with Q&A and notes
 
-**Q: Co to jest npx?**
-A:
-- npm = instaluje pakiety
-- npx = uruchamia komendy z pakietów (bez globalnej instalacji)
-Przykład: npx tsc --version (uruchamia TypeScript Compiler z node_modules)
-
-**Q: Dlaczego TypeScript zamiast JavaScript?**
-A: (Do wypełnienia podczas konfiguracji - następna sesja)
-
-**Q: Jak działa Page Object Model?**
-A: (Do wypełnienia w Fazie 2)
-
-#### ✅ Co udało się zrobić:
-- [x] Utworzenie roadmap.md z planem nauki (10 faz)
-- [x] Utworzenie claude.md (learning journal)
-- [x] Utworzenie README.md (portfolio-ready documentation)
-- [x] Instalacja Node.js (v24.12.0) i npm (v11.6.2)
-- [x] Inicjalizacja package.json (npm init -y)
-- [x] Konfiguracja package.json (scripts, keywords, license)
-- [x] Instalacja Playwright (v1.57.0) + TypeScript (v5.9.3)
-- [x] Instalacja pakietów: @playwright/test, typescript, @types/node
-- [x] Instalacja przeglądarek (Chromium, Firefox, WebKit) - 443MB
-- [ ] Konfiguracja TypeScript (tsconfig.json) - NASTĘPNA SESJA
-- [ ] Konfiguracja Playwright (playwright.config.ts)
-- [ ] Struktura folderów
-
-#### 🤔 Wyzwania i jak je rozwiązaliśmy:
-**Problem 1: npm/node not recognized**
-- Error: `npm : The term 'npm' is not recognized...`
-- Przyczyna: Node.js nie był zainstalowany
-- Rozwiązanie: Instalacja Node.js LTS z nodejs.org, restart VSCode
-- Lekcja: Node.js musi być w PATH, żeby terminal go rozpoznał
-
-(TY możesz dodać więcej na końcu sesji)
-
-#### 💡 Key Takeaways (Najważniejsze wnioski):
-(TY wypełnisz na końcu sesji - swoimi słowami! 3-5 punktów)
-- wiem,czym jest plik package.json, jakie informacje mogą się tam znaęźć (nazwa projketu, autor, licencka projektu, skrypty, dependecies)
--
--
+### ✋ Command Execution
+- **ALWAYS ask before executing** commands (unless it's just reading files/checking status)
+- **YOU type and execute** commands - learning by practice
+- Exception: purely informational commands (read files, git status, ls)
 
 ---
 
-## 📖 Koncepty - Szczegółowe notatki
+## 📖 Concepts - Detailed Notes
 
 ### 🔷 Fundamentals
 
 #### Node.js & NPM
 ```
-Co to jest:
-- Node.js: środowisko uruchomieniowe JavaScript poza przeglądarką
-- NPM: Node Package Manager - menedżer pakietów (jak Maven dla Javy, pip dla Pythona)
+What it is:
+- Node.js: JavaScript runtime environment outside the browser
+- NPM: Node Package Manager - package manager (like Maven for Java, pip for Python)
 
-Dlaczego to ważne:
-- Pozwala uruchamiać JavaScript/TypeScript lokalnie (nie tylko w przeglądarce)
-- NPM zarządza dependencies (zależnościami) projektu
-- Standardowy ekosystem dla narzędzi JS/TS
+Why it matters:
+- Allows running JavaScript/TypeScript locally (not just in browser)
+- NPM manages project dependencies
+- Standard ecosystem for JS/TS tools
 
-Kluczowe pliki:
-- package.json: "lista zakupów" projektu - wszystkie zależności
-- package-lock.json: dokładne wersje zainstalowanych pakietów (dla konsystencji)
-- node_modules/: folder z zainstalowanymi pakietami (CIĘŻKI! ~100-500MB)
+Key files:
+- package.json: project's "shopping list" - all dependencies
+- package-lock.json: exact versions of installed packages (for consistency)
+- node_modules/: folder with installed packages (HEAVY! ~100-500MB)
 
-Kluczowe komendy:
-npm init                  # Tworzy nowy projekt (generuje package.json)
-npm install <pakiet>      # Instaluje pakiet
-npm install               # Instaluje wszystkie pakiety z package.json
-npm run <script>          # Uruchamia skrypt z package.json
-npm test                  # Uruchamia testy
+Key commands:
+npm init                  # Creates new project (generates package.json)
+npm install <package>     # Installs package
+npm install               # Installs all packages from package.json
+npm run <script>          # Runs script from package.json
+npm test                  # Runs tests
 
-Analogia:
-package.json = przepis na ciasto (lista składników)
-npm install = idź do sklepu i kup składniki
-node_modules = lodówka ze składnikami
+Analogy:
+package.json = recipe for a cake (list of ingredients)
+npm install = go to store and buy ingredients
+node_modules = fridge with ingredients
 ```
 
 #### TypeScript
 ```
-Co to jest:
-- JavaScript + typy statyczne
-- Kompiluje się do czystego JavaScript
+What it is:
+- JavaScript + static types
+- Compiles to pure JavaScript
 - .ts files → TypeScript Compiler → .js files
 
-Dlaczego w testach automatycznych?
-✅ Wykrywa błędy podczas pisania (nie runtime!)
-✅ Inteligentne auto-complete w IDE
-✅ Lepsze refactoring (IDE wie co gdzie używane)
-✅ Samodokumentujący się kod (typy jako dokumentacja)
-✅ Łatwiejsze maintenance
+Why in test automation?
+✅ Catches errors while writing (not at runtime!)
+✅ Intelligent auto-complete in IDE
+✅ Better refactoring (IDE knows what's used where)
+✅ Self-documenting code (types as documentation)
+✅ Easier maintenance
 
-Przykład dlaczego to ważne:
+Example of why it matters:
 
-// JavaScript - bug ukryty do runtime
+// JavaScript - bug hidden until runtime
 function login(username, password) {
   await page.fill('#user', username);
   await page.fill('#pass', password);
 }
-login('admin', 123); // 123 to liczba, nie string! Runtime error!
+login('admin', 123); // 123 is a number, not string! Runtime error!
 
-// TypeScript - błąd wychwycony natychmiast
+// TypeScript - error caught immediately
 function login(username: string, password: string): Promise<void> {
   await page.fill('#user', username);
   await page.fill('#pass', password);
@@ -199,49 +121,49 @@ function login(username: string, password: string): Promise<void> {
 login('admin', 123); // ❌ ERROR: Argument of type 'number' is not assignable
 login('admin', '123'); // ✅ OK
 
-Kluczowe pliki:
-- tsconfig.json: konfiguracja TypeScript compilera
-- .ts files: pliki TypeScript
+Key files:
+- tsconfig.json: TypeScript compiler configuration
+- .ts files: TypeScript files
 ```
 
 #### TypeScript - tsconfig.json
 ```json
 {
   "compilerOptions": {
-    "target": "ES2022",        // Do jakiej wersji JS kompilować
-    "module": "commonjs",      // System modułów (commonjs = Node.js standard)
-    "strict": true,            // Włącz wszystkie strict checks
-    "esModuleInterop": true,   // Lepsze imoprtowanie modułów
-    "skipLibCheck": true,      // Szybsza kompilacja
-    "outDir": "./dist",        // Gdzie zapisać skompilowane .js
-    "rootDir": "./src"         // Gdzie są źródła .ts
+    "target": "ES2022",        // What JS version to compile to
+    "module": "commonjs",      // Module system (commonjs = Node.js standard)
+    "strict": true,            // Enable all strict checks
+    "esModuleInterop": true,   // Better module importing
+    "skipLibCheck": true,      // Faster compilation
+    "outDir": "./dist",        // Where to save compiled .js
+    "rootDir": "./src"         // Where .ts sources are
   }
 }
 
-Najważniejsze opcje:
-- strict: true = maksymalne sprawdzanie typów (ZAWSZE używaj!)
-- outDir: gdzie trafią pliki .js po kompilacji
+Most important options:
+- strict: true = maximum type checking (ALWAYS use!)
+- outDir: where .js files go after compilation
 ```
 
 ---
 
 ### 🔷 Playwright Basics
 
-#### Co to jest Playwright?
+#### What is Playwright?
 ```
-Definicja:
-Framework od Microsoft do testowania end-to-end aplikacji webowych
+Definition:
+Framework from Microsoft for end-to-end testing of web applications
 
-Rok powstania: 2020 (młodszy od Selenium!)
+Year created: 2020 (younger than Selenium!)
 
-Główne features:
-✅ Auto-waiting: czeka automatycznie na elementy (no more sleep()!)
+Main features:
+✅ Auto-waiting: waits automatically for elements (no more sleep()!)
 ✅ Multi-browser: Chromium, Firefox, WebKit (Safari)
 ✅ Multi-platform: Windows, Linux, macOS
 ✅ Multi-language: JavaScript, TypeScript, Python, Java, .NET
-✅ Built-in API testing (nie trzeba osobnego narzędzia!)
+✅ Built-in API testing (no separate tool needed!)
 ✅ Network interception (mock API responses)
-✅ Auto-screenshots/videos przy fail
+✅ Auto-screenshots/videos on failure
 ✅ Parallel execution out-of-the-box
 ✅ Headless & headed modes
 
@@ -249,138 +171,138 @@ Playwright vs Selenium:
 ┌─────────────────┬──────────────┬──────────────┐
 │ Feature         │ Playwright   │ Selenium     │
 ├─────────────────┼──────────────┼──────────────┤
-│ Auto-waiting    │ ✅ Tak       │ ❌ Nie       │
-│ API testing     │ ✅ Built-in  │ ❌ Nie       │
-│ Speed           │ ⚡ Szybki    │ 🐢 Wolniejszy│
-│ Flakiness      │ ✅ Mniej     │ ⚠️ Więcej    │
-│ Community       │ 📈 Rośnie    │ 📊 Dojrzała  │
-│ Job market      │ 🔥 Trending  │ 💼 Więcej    │
+│ Auto-waiting    │ ✅ Yes       │ ❌ No        │
+│ API testing     │ ✅ Built-in  │ ❌ No        │
+│ Speed           │ ⚡ Fast      │ 🐢 Slower    │
+│ Flakiness      │ ✅ Less      │ ⚠️ More      │
+│ Community       │ 📈 Growing   │ 📊 Mature    │
+│ Job market      │ 🔥 Trending  │ 💼 More jobs │
 └─────────────────┴──────────────┴──────────────┘
 
-Kiedy używać:
-- Nowe projekty: Playwright ✅
-- Legacy projekty z Selenium: można migrować stopniowo
-- Portfolio: Playwright pokazuje że znasz nowoczesne narzędzia!
+When to use:
+- New projects: Playwright ✅
+- Legacy projects with Selenium: can migrate gradually
+- Portfolio: Playwright shows you know modern tools!
 ```
 
-#### Podstawowe API Playwright
+#### Basic Playwright API
 ```typescript
-// To wypełnimy podczas pisania pierwszych testów!
-// Będziemy dodawać przykłady w miarę nauki
+// To be filled while writing first tests!
+// We'll add examples as we learn
 ```
 
 ---
 
 ### 🔷 Page Object Model (POM)
 
-#### Teoria
+#### Theory
 ```
-Co to jest:
-(Do wypełnienia w Fazie 2)
+What it is:
+(To be filled in Phase 2)
 
-Dlaczego używamy:
-(Do wypełnienia w Fazie 2)
+Why we use it:
+(To be filled in Phase 2)
 
-Przykład struktury:
-(Do wypełnienia z przykładami w Fazie 2)
+Example structure:
+(To be filled with examples in Phase 2)
 ```
 
 ---
 
-### 🔷 Design Patterns w testach
+### 🔷 Design Patterns in Tests
 
 #### Factory Pattern
 ```
-(Do wypełnienia podczas implementacji w Fazie 3)
+(To be filled during implementation in Phase 3)
 ```
 
 #### Builder Pattern
 ```
-(Do wypełnienia podczas implementacji w Fazie 3)
+(To be filled during implementation in Phase 3)
 ```
 
 #### Singleton Pattern
 ```
-(Do wypełnienia podczas implementacji w Fazie 3)
+(To be filled during implementation in Phase 3)
 ```
 
 ---
 
 ### 🔷 Best Practices
 
-#### Lokatory - Hierarchia (The Golden Rule)
+#### Locators - Hierarchy (The Golden Rule)
 ```
-Hierarchia od najlepszego do najgorszego:
+Hierarchy from best to worst:
 
 1. ⭐⭐⭐ data-testid / data-test
-   Przykład: page.getByTestId('submit-button')
-   ✅ Nie zmienia się
-   ✅ Jasna intencja "to jest do testowania"
-   ❌ Wymaga współpracy z devami
+   Example: page.getByTestId('submit-button')
+   ✅ Doesn't change
+   ✅ Clear intent "this is for testing"
+   ❌ Requires cooperation with devs
 
 2. ⭐⭐ Role (accessibility)
-   Przykład: page.getByRole('button', { name: 'Submit' })
-   ✅ Wymusza accessibility
-   ✅ Stabilne
-   ❌ Czasem niejednoznaczne (wiele buttonów)
+   Example: page.getByRole('button', { name: 'Submit' })
+   ✅ Enforces accessibility
+   ✅ Stable
+   ❌ Sometimes ambiguous (multiple buttons)
 
 3. ⭐ Text
-   Przykład: page.getByText('Submit')
-   ✅ Czytelne
-   ❌ Zmienia się przy tłumaczeniach
-   ❌ Może być niejednoznaczne
+   Example: page.getByText('Submit')
+   ✅ Readable
+   ❌ Changes with translations
+   ❌ Can be ambiguous
 
 4. ❌ CSS / XPath (last resort!)
-   Przykład: page.locator('.btn-primary > span:nth-child(2)')
-   ❌ Kruche (każda zmiana CSS = broken test)
-   ❌ Nieczytelne
-   ✅ Czasem jedyna opcja
+   Example: page.locator('.btn-primary > span:nth-child(2)')
+   ❌ Brittle (any CSS change = broken test)
+   ❌ Unreadable
+   ✅ Sometimes the only option
 
-Przykłady:
-(Będziemy dodawać podczas pisania testów)
+Examples:
+(We'll add during test writing)
 ```
 
 #### Test Organization
 ```
-(Do wypełnienia podczas pisania pierwszych testów)
+(To be filled while writing first tests)
 ```
 
 ---
 
-## 🐛 Troubleshooting - Problemy i rozwiązania
+## 🐛 Troubleshooting - Problems and Solutions
 
-### Problem 1: [Tytuł]
-**Opis:**
-(Co się stało)
+### Problem 1: [Title]
+**Description:**
+(What happened)
 
-**Rozwiązanie:**
-(Jak naprawiliśmy)
+**Solution:**
+(How we fixed it)
 
-**Czego się nauczyłem:**
-(Lekcje)
+**What I learned:**
+(Lessons)
 
 ---
 
-## 📚 Resources - Przydatne zasoby
+## 📚 Resources - Useful Links
 
-### Dokumentacja
-- [Playwright Docs](https://playwright.dev/) - główna dokumentacja
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/) - nauka TypeScript
+### Documentation
+- [Playwright Docs](https://playwright.dev/) - main documentation
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/) - learn TypeScript
 - [Playwright Best Practices](https://playwright.dev/docs/best-practices)
 
 ### Tutorials & Articles
-(Będziemy dodawać użyteczne linki podczas nauki)
+(We'll add useful links during learning)
 
 ### Tools & Extensions
-**VSCode Extensions (zalecane):**
-- Playwright Test for VSCode - uruchamianie testów z IDE
-- ESLint - wykrywanie błędów
-- Prettier - formatowanie kodu
+**VSCode Extensions (recommended):**
+- Playwright Test for VSCode - run tests from IDE
+- ESLint - error detection
+- Prettier - code formatting
 - TypeScript Hero - auto-import
 
 ---
 
-## ✨ Code Snippets - Przydatne fragmenty kodu
+## ✨ Code Snippets - Useful Code Fragments
 
 ### Snippet 1: Basic test structure (template)
 ```typescript
@@ -388,125 +310,92 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Feature name', () => {
   test.beforeEach(async ({ page }) => {
-    // Setup - przygotowanie
+    // Setup - preparation
   });
 
   test('should do something', async ({ page }) => {
-    // Arrange - przygotowanie danych
-    // Act - wykonanie akcji
-    // Assert - weryfikacja
+    // Arrange - prepare data
+    // Act - execute action
+    // Assert - verify
   });
 
   test.afterEach(async ({ page }) => {
-    // Cleanup - sprzątanie
+    // Cleanup - cleanup
   });
 });
 ```
-(Więcej snippetów będziemy dodawać w trakcie!)
+(More snippets will be added along the way!)
 
 ---
 
-## 🎯 Daily Goals Tracker
+## 🎯 Common Questions & Answers
 
-### Week 1 - Fundamenty & POM
-- [ ] **Day 1**: Project setup, dokumentacja, inicjalizacja
-- [ ] **Day 2**: Struktura folderów, pierwszy Page Object
-- [ ] **Day 3**: Pierwszy kompletny test z POM
-- [ ] **Day 4**: Base Page class, więcej Page Objects
-- [ ] **Day 5**: Design Patterns - Factory intro
-- [ ] **Day 6-7**: Review, refactor, praktyka
+### Q: What is package.json?
+**A:** It's the "identity certificate" of a Node.js project. Contains:
+- Project name and version
+- List of dependencies (packages the project needs)
+- Scripts (commands we can run)
+- Metadata (author, license, keywords)
 
-### Week 2 - Patterns & API Testing
-- [ ] **Day 8**: Builder Pattern, test data
-- [ ] **Day 9**: Fixtures w Playwright
-- [ ] **Day 10**: API testing basics
-- [ ] **Day 11**: Hybrid tests (UI + API)
-- [ ] **Day 12-14**: Praktyka i refactor
-
-### Week 3 - Visual & CI/CD
-(Do wypełnienia później)
-
-### Week 4 - Polish & Portfolio
-(Do wypełnienia później)
+**Analogy:** package.json = recipe for a cake (list of ingredients and instructions)
 
 ---
 
-## 💭 Reflection - Refleksje (TY wypełniasz!)
+### Q: What's the difference between dependencies and devDependencies?
+**A:**
+- **dependencies** = packages needed for the app to RUN in production
+- **devDependencies** = packages needed only for DEVELOPMENT (testing, compilation)
 
-### Co poszło dobrze?
-(Twoje sukcesy)
+**Installation:**
+- `npm install package` (adds to dependencies)
+- `npm install -D package` (adds to devDependencies)
 
-### Co było trudne?
-(Wyzwania)
+In our testing project, everything is dev tools, so we use `-D`
 
-### Co zrobić inaczej następnym razem?
+---
+
+### Q: What is npx?
+**A:**
+- **npm** = installs packages
+- **npx** = runs commands from packages (without global installation)
+
+**Example:** `npx tsc --version` (runs TypeScript Compiler from node_modules)
+
+---
+
+### Q: Why TypeScript instead of JavaScript?
+**A:** (To be filled during configuration)
+
+---
+
+### Q: How does Page Object Model work?
+**A:** (To be filled in Phase 2)
+
+---
+
+## 💭 Reflection - Your Personal Notes
+
+### What went well?
+(Your successes)
+
+### What was difficult?
+(Challenges)
+
+### What to do differently next time?
 (Improvements)
 
 ---
 
 ## 🚀 Next Steps
 
-### Najbliższe kroki na następną sesję (Session 2):
-1. **Utworzenie tsconfig.json** (TypeScript configuration)
-   - Komenda: `npx tsc --init`
-   - Modyfikacja dla Playwright (strict mode, module system)
-
-2. **Utworzenie playwright.config.ts** (Playwright configuration)
-   - Konfiguracja browserów (Chromium, Firefox, WebKit)
-   - Ustawienia testów (timeout, retry, screenshots)
-   - Reporter configuration
-
-3. **Struktura folderów projektu**
-   - Utworzenie: src/pages/, src/tests/, src/fixtures/, src/utils/
-   - .gitignore (żeby nie commitować node_modules)
-
-4. **Pierwszy prosty test** (hello world test)
-   - Sprawdzenie czy wszystko działa
-   - Uruchomienie: npm test
-
-### Pytania do zbadania w przyszłości:
-- **Node.js i transpilacja** - jak działa proces .ts → .js? Kiedy to się dzieje?
-- Jak dokładnie działa TypeScript compilation?
-- Co to jest "strict mode" w TypeScript i dlaczego go używamy?
-- Jak Playwright znajduje testy automatycznie?
-- Różnica między compile time vs runtime errors
+### Questions to explore in the future:
+- **Node.js and transpilation** - how does the .ts → .js process work? When does it happen?
+- How exactly does TypeScript compilation work?
+- What is "strict mode" in TypeScript and why do we use it?
+- How does Playwright find tests automatically?
+- Difference between compile time vs runtime errors
 
 ---
 
-## 📝 Session Template (kopiuj dla nowych sesji)
-
-```markdown
-### Session X - [Data] - [Tytuł]
-
-#### 🎯 Cele sesji:
-1.
-2.
-
-#### 📚 Nowe koncepty:
-- [ ] Koncept 1
-- [ ] Koncept 2
-
-#### 🔍 Pytania i odpowiedzi:
-Q:
-A:
-
-#### ✅ Osiągnięcia:
-- [ ]
-- [ ]
-
-#### 🤔 Wyzwania:
-(TY wypełniasz)
-
-#### 💡 Key Takeaways:
-(TY wypełniasz - 3-5 punktów swoimi słowami!)
--
--
--
-
----
-```
-
----
-
-*Ten dokument jest living document - aktualizuj go regularnie podczas nauki! 🌱*
-*Pamiętaj: Wypełnianie refleksji to część procesu nauki, nie obowiązek! 😊*
+*This document is a living document - update it regularly during learning! 🌱*
+*Remember: Detailed session progress is tracked in `docs/sessions/` files.*

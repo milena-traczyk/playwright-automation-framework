@@ -4,96 +4,96 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-> Wzorowy projekt testów automatycznych wykorzystujący najlepsze praktyki, wzorce projektowe i nowoczesne narzędzia QA.
+> Professional test automation framework showcasing best practices, design patterns, and modern QA tools.
 
 ---
 
-## 📋 Spis treści
+## 📋 Table of Contents
 
-- [O projekcie](#-o-projekcie)
-- [Technologie](#-technologie)
-- [Funkcjonalności](#-funkcjonalności)
-- [Struktura projektu](#-struktura-projektu)
-- [Wymagania](#-wymagania)
-- [Instalacja](#-instalacja)
-- [Uruchamianie testów](#-uruchamianie-testów)
-- [Wzorce projektowe](#-wzorce-projektowe)
+- [About](#-about)
+- [Technologies](#-technologies)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Running Tests](#-running-tests)
+- [Design Patterns](#-design-patterns)
 - [Best Practices](#-best-practices)
 - [Reporting](#-reporting)
 - [CI/CD](#-cicd)
 - [Roadmap](#-roadmap)
-- [Autor](#-autor)
+- [Author](#-author)
 
 ---
 
-## 🎯 O projekcie
+## 🎯 About
 
-Ten projekt jest kompleksowym przykładem profesjonalnego frameworka do automatyzacji testów, stworzonym jako **portfolio project** dla QA Engineers. Demonstruje znajomość:
+This project is a comprehensive example of a professional test automation framework, created as a **portfolio project** for QA Engineers. It demonstrates expertise in:
 
 - ✅ Page Object Model (POM)
 - ✅ Design Patterns (Factory, Builder, Singleton, Strategy)
 - ✅ UI & API Testing
 - ✅ Visual Regression Testing
-- ✅ CI/CD z GitHub Actions
+- ✅ CI/CD with GitHub Actions
 - ✅ Advanced Reporting (Allure)
 - ✅ TypeScript & ES6+ features
 - ✅ Test Data Management
 - ✅ Parallel execution
 
-**Aplikacja testowa:** OrangeHRM Demo (https://opensource-demo.orangehrmlive.com/)
+**Application under test:** OrangeHRM Demo (https://opensource-demo.orangehrmlive.com/)
 
 ---
 
-## 🛠 Technologie
+## 🛠 Technologies
 
-| Technologia | Wersja | Zastosowanie |
-|------------|--------|--------------|
-| **Playwright** | ^1.50.0 | Framework do testowania E2E |
-| **TypeScript** | ^5.7.0 | Język programowania |
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Playwright** | ^1.50.0 | E2E testing framework |
+| **TypeScript** | ^5.7.0 | Programming language |
 | **Node.js** | 18+ | Runtime environment |
-| **Allure Report** | Latest | Zaawansowany reporting |
-| **Faker.js** | Latest | Generowanie danych testowych |
-| **ESLint** | Latest | Linting i code quality |
+| **Allure Report** | Latest | Advanced reporting |
+| **Faker.js** | Latest | Test data generation |
+| **ESLint** | Latest | Linting and code quality |
 | **Prettier** | Latest | Code formatting |
 
 ---
 
-## ✨ Funkcjonalności
+## ✨ Features
 
-### 🧩 Architektura
-- **Page Object Model** - separacja logiki testowej od implementacji UI
-- **Component Objects** - reużywalne komponenty (modals, forms)
-- **Base Page** - wspólne metody dla wszystkich page objects
-- **Custom Fixtures** - dependency injection dla testów
+### 🧩 Architecture
+- **Page Object Model** - separation of test logic from UI implementation
+- **Component Objects** - reusable components (modals, forms)
+- **Base Page** - common methods for all page objects
+- **Custom Fixtures** - dependency injection for tests
 
 ### 🎨 Design Patterns
-- **Factory Pattern** - dynamiczne tworzenie page objects
-- **Builder Pattern** - budowanie złożonych obiektów testowych
+- **Factory Pattern** - dynamic creation of page objects
+- **Builder Pattern** - building complex test objects
 - **Singleton Pattern** - Configuration Manager, Logger
-- **Strategy Pattern** - wymienne strategie dla różnych środowisk
+- **Strategy Pattern** - interchangeable strategies for different environments
 
 ### 🧪 Testing Features
-- **UI Testing** - kompleksowe testy end-to-end
-- **API Testing** - wbudowane API testing w Playwright
-- **Hybrid Tests** - kombinacja UI + API dla optymalnej wydajności
+- **UI Testing** - comprehensive end-to-end tests
+- **API Testing** - built-in API testing with Playwright
+- **Hybrid Tests** - combination of UI + API for optimal performance
 - **Visual Testing** - screenshot comparison & visual regression
-- **Accessibility Testing** - a11y checks (opcjonalne)
+- **Accessibility Testing** - a11y checks (optional)
 
 ### 📊 Reporting & Observability
-- **Allure Report** - bogate raporty z historiami, kategoriami, attachments
-- **Screenshots** - automatyczne przy fail
-- **Videos** - nagrania testów (opcjonalne)
-- **Trace files** - szczegółowe traces dla debugging
+- **Allure Report** - rich reports with histories, categories, attachments
+- **Screenshots** - automatic on failure
+- **Videos** - test recordings (optional)
+- **Trace files** - detailed traces for debugging
 
 ### 🚀 CI/CD
-- **GitHub Actions** - automatyczne uruchamianie testów
+- **GitHub Actions** - automated test execution
 - **Multi-browser testing** - Chromium, Firefox, WebKit
-- **Parallel execution** - szybkie wykonanie test suite
-- **Artifact management** - raporty dostępne po każdym run
+- **Parallel execution** - fast test suite execution
+- **Artifact management** - reports available after each run
 
 ---
 
-## 📁 Struktura projektu
+## 📁 Project Structure
 
 ```
 playwright-automation-framework/
@@ -105,7 +105,7 @@ playwright-automation-framework/
 ├── src/
 │   ├── pages/                      # Page Objects
 │   │   ├── base/
-│   │   │   └── BasePage.ts         # Base class dla wszystkich pages
+│   │   │   └── BasePage.ts         # Base class for all pages
 │   │   ├── auth/
 │   │   │   └── LoginPage.ts
 │   │   └── dashboard/
@@ -127,7 +127,7 @@ playwright-automation-framework/
 │   ├── utils/                      # Utility functions
 │   │   ├── helpers/
 │   │   ├── config/
-│   │   │   └── ConfigManager.ts    # Singleton dla konfiguracji
+│   │   │   └── ConfigManager.ts    # Singleton for configuration
 │   │   └── logger/
 │   │       └── Logger.ts
 │   │
@@ -159,114 +159,114 @@ playwright-automation-framework/
 ├── .prettierrc                     # Prettier configuration
 ├── package.json                    # Dependencies
 │
-├── README.md                       # Ten plik!
-├── roadmap.md                      # Plan nauki i rozwoju
+├── README.md                       # This file!
+├── roadmap.md                      # Learning and development plan
 └── claude.md                       # Learning journal
 ```
 
 ---
 
-## 📦 Wymagania
+## 📦 Requirements
 
-- **Node.js** 18 lub nowszy
-- **npm** 9 lub nowszy
-- **Git** (do klonowania repo)
+- **Node.js** 18 or newer
+- **npm** 9 or newer
+- **Git** (for cloning the repo)
 
-### Sprawdź swoje wersje:
+### Check your versions:
 ```bash
-node --version   # powinno być >= 18
-npm --version    # powinno być >= 9
+node --version   # should be >= 18
+npm --version    # should be >= 9
 ```
 
 ---
 
-## 🚀 Instalacja
+## 🚀 Installation
 
-### 1. Sklonuj repozytorium
+### 1. Clone the repository
 ```bash
-git clone https://github.com/twoj-username/playwright-automation-framework.git
+git clone https://github.com/your-username/playwright-automation-framework.git
 cd playwright-automation-framework
 ```
 
-### 2. Zainstaluj dependencies
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Zainstaluj Playwright browsers
+### 3. Install Playwright browsers
 ```bash
 npx playwright install
 ```
 
-### 4. Sprawdź instalację
+### 4. Verify installation
 ```bash
 npx playwright --version
 ```
 
 ---
 
-## 🎮 Uruchamianie testów
+## 🎮 Running Tests
 
-### Podstawowe komendy
+### Basic commands
 
 ```bash
-# Uruchom wszystkie testy
+# Run all tests
 npm test
 
-# Uruchom testy w headed mode (z widoczną przeglądarką)
+# Run tests in headed mode (visible browser)
 npm run test:headed
 
-# Uruchom testy w debug mode
+# Run tests in debug mode
 npm run test:debug
 
-# Uruchom konkretny plik testowy
+# Run specific test file
 npx playwright test tests/ui/auth/login.spec.ts
 
-# Uruchom testy z konkretnym tagiem
+# Run tests with specific tag
 npx playwright test --grep @smoke
 
-# Uruchom testy na konkretnej przeglądarce
+# Run tests on specific browser
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
 ```
 
-### Raporty
+### Reports
 
 ```bash
-# Otwórz HTML report (wbudowany Playwright)
+# Open HTML report (built-in Playwright)
 npm run report
 
-# Generuj Allure report
+# Generate Allure report
 npm run allure:generate
 
-# Otwórz Allure report
+# Open Allure report
 npm run allure:open
 
-# Generuj i otwórz Allure (jedno polecenie)
+# Generate and open Allure (one command)
 npm run allure:report
 ```
 
 ### CI/CD
 
 ```bash
-# Uruchom w trybie CI
+# Run in CI mode
 npm run test:ci
 
-# To samo co robi GitHub Actions:
+# Same as GitHub Actions does:
 # - headless mode
-# - wszystkie przeglądarki
-# - generuje raporty
-# - uploaduje artifacts
+# - all browsers
+# - generates reports
+# - uploads artifacts
 ```
 
 ---
 
-## 🎨 Wzorce projektowe
+## 🎨 Design Patterns
 
 ### 1. Page Object Model (POM)
 ```typescript
-// Separacja logiki testowej od implementacji UI
+// Separation of test logic from UI implementation
 class LoginPage extends BasePage {
   private usernameInput = () => this.page.getByTestId('username');
   private passwordInput = () => this.page.getByTestId('password');
@@ -281,7 +281,7 @@ class LoginPage extends BasePage {
 
 ### 2. Factory Pattern
 ```typescript
-// Dynamiczne tworzenie page objects
+// Dynamic creation of page objects
 class PageFactory {
   static createPage<T>(PageClass: new (page: Page) => T, page: Page): T {
     return new PageClass(page);
@@ -291,7 +291,7 @@ class PageFactory {
 
 ### 3. Builder Pattern
 ```typescript
-// Budowanie złożonych obiektów testowych
+// Building complex test objects
 const user = new UserBuilder()
   .withUsername('admin')
   .withRole('Admin')
@@ -301,7 +301,7 @@ const user = new UserBuilder()
 
 ### 4. Singleton Pattern
 ```typescript
-// Jedna instancja w całej aplikacji
+// Single instance across the application
 class ConfigManager {
   private static instance: ConfigManager;
 
@@ -318,41 +318,41 @@ class ConfigManager {
 
 ## ✅ Best Practices
 
-### Lokatory - Hierarchia
+### Locator Hierarchy
 ```typescript
-// ⭐⭐⭐ Najlepsze - data-testid
+// ⭐⭐⭐ Best - data-testid
 page.getByTestId('submit-button')
 
-// ⭐⭐ Bardzo dobre - role (accessibility)
+// ⭐⭐ Very good - role (accessibility)
 page.getByRole('button', { name: 'Submit' })
 
-// ⭐ Dobre - text
+// ⭐ Good - text
 page.getByText('Submit')
 
-// ❌ Ostateczność - CSS/XPath (kruche!)
+// ❌ Last resort - CSS/XPath (brittle!)
 page.locator('.btn-primary')
 ```
 
 ### Auto-waiting
 ```typescript
-// ✅ Playwright czeka automatycznie
+// ✅ Playwright waits automatically
 await page.click('button');
 await expect(page.locator('.message')).toBeVisible();
 
-// ❌ Nie rób tego (niepotrzebne sleep)
+// ❌ Don't do this (unnecessary sleep)
 await page.waitForTimeout(5000); // Bad!
 ```
 
 ### Test Independence
 ```typescript
-// ✅ Każdy test jest niezależny
+// ✅ Each test is independent
 test.beforeEach(async ({ page }) => {
-  // Setup dla KAŻDEGO testu
+  // Setup for EACH test
   await loginPage.login('admin', 'pass');
 });
 
-// ❌ Testy zależne od siebie (Bad!)
-test.describe.serial(() => { /* ... */ }); // Unikaj!
+// ❌ Tests dependent on each other (Bad!)
+test.describe.serial(() => { /* ... */ }); // Avoid!
 ```
 
 ---
@@ -360,15 +360,15 @@ test.describe.serial(() => { /* ... */ }); // Unikaj!
 ## 📊 Reporting
 
 ### Allure Report Features
-- 📈 **Historie testów** - trendy pass/fail
-- 🏷️ **Kategorie** - grupowanie testów
+- 📈 **Test histories** - pass/fail trends
+- 🏷️ **Categories** - test grouping
 - 📎 **Attachments** - screenshots, videos, logs
-- ⏱️ **Timeline** - wizualizacja wykonania
-- 📊 **Graphs** - wykresy statystyk
+- ⏱️ **Timeline** - execution visualization
+- 📊 **Graphs** - statistics charts
 
 ### Screenshots & Videos
 ```typescript
-// Automatyczne przy fail (skonfigurowane w playwright.config.ts)
+// Automatic on failure (configured in playwright.config.ts)
 screenshot: 'only-on-failure',
 video: 'retain-on-failure',
 trace: 'on-first-retry',
@@ -384,9 +384,9 @@ trace: 'on-first-retry',
 - ✅ Parallel execution
 - ✅ Artifact upload: reports, videos, screenshots
 - ✅ Allure report generation
-- ✅ Comment na PR z wynikami (opcjonalne)
+- ✅ PR comment with results (optional)
 
-### Lokalne uruchomienie "jak w CI"
+### Run locally "like in CI"
 ```bash
 npm run test:ci
 ```
@@ -395,49 +395,49 @@ npm run test:ci
 
 ## 🗺️ Roadmap
 
-Szczegółowy plan nauki i rozwoju projektu znajduje się w [roadmap.md](roadmap.md).
+Detailed learning and development plan can be found in [roadmap.md](roadmap.md).
 
 **Status:**
-- ✅ Faza 1: Fundament - W TRAKCIE
-- ⏳ Faza 2: Page Object Model
-- ⏳ Faza 3: Design Patterns
-- ⏳ Faza 4-10: ...
+- ✅ Phase 1: Foundation - IN PROGRESS
+- ⏳ Phase 2: Page Object Model
+- ⏳ Phase 3: Design Patterns
+- ⏳ Phase 4-10: ...
 
 ---
 
-## 📚 Dodatkowe zasoby
+## 📚 Additional Resources
 
-- [Learning Journal (claude.md)](claude.md) - notatki z procesu nauki
+- [Learning Journal (claude.md)](claude.md) - notes from the learning process
 - [Playwright Docs](https://playwright.dev/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
 ---
 
-## 👤 Autor
+## 👤 Author
 
-**[Twoje Imię]**
+**[Your Name]**
 - 💼 LinkedIn: [link]
 - 🐙 GitHub: [link]
 - 📧 Email: [email]
 
 ---
 
-## 📄 Licencja
+## 📄 License
 
-MIT License - wolne do użytku w portfolio i projektach komercyjnych.
+MIT License - free to use in portfolio and commercial projects.
 
 ---
 
 ## 🙏 Acknowledgments
 
-- Playwright Team za świetny framework
-- OrangeHRM za darmową aplikację demo
-- Community za best practices i inspirację
+- Playwright Team for an excellent framework
+- OrangeHRM for the free demo application
+- Community for best practices and inspiration
 
 ---
 
-**⭐ Jeśli ten projekt Ci pomógł, zostaw gwiazdkę na GitHub! ⭐**
+**⭐ If this project helped you, leave a star on GitHub! ⭐**
 
 ---
 
-*Stworzono z ❤️ jako learning project i portfolio piece*
+*Created with ❤️ as a learning project and portfolio piece*
