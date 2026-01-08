@@ -4,7 +4,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-> Professional test automation framework showcasing best practices, design patterns, and modern QA tools.
+> A learning project focused on building a modern test automation framework following industry best practices and design patterns.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## 🎯 About
 
-This project is a comprehensive example of a professional test automation framework, created as a **portfolio project** for QA Engineers. It demonstrates expertise in:
+This is a **hands-on learning project** where I'm building a test automation framework from scratch, implementing industry-standard practices and design patterns. Created as a **portfolio project** to demonstrate practical QA automation skills:
 
 - ✅ Page Object Model (POM)
 - ✅ Design Patterns (Factory, Builder, Singleton, Strategy)
