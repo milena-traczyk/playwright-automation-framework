@@ -1,0 +1,59 @@
+# === Node.js === #
+node_modules/              # NPM packages (~200-500MB) - never commit
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Playwright Test Results === #
+test-results/              # Test results (JSON, failures, traces)
+playwright-report/         # HTML test report
+playwright/.cache/
+
+# === Test Artifacts === #
+*.png                      # Screenshots from test failures
+*.jpg
+*.jpeg
+videos/                    # Test recordings
+traces/                    # Playwright traces
+downloads/                 # Downloaded files during tests
+
+# === Allure Reports === #
+allure-results/
+allure-report/
+
+# === TypeScript === #
+dist/                      # Compiled JavaScript output
+*.tsbuildinfo
+
+# === Environment Variables === #
+.env                       # Secrets, API keys - NEVER commit!
+.env.local
+.env.*.local
+
+# === IDE / Editor === #
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# === OS === #
+Thumbs.db
+Desktop.ini
+
+# === Logs === #
+*.log
+logs/
+
+# === Temporary === #
+*.tmp
+*.temp
+.cache/
+
+# === Coverage === #
+coverage/
+.nyc_output/
+
+# === Personal Notes (Private) === #
+docs/sessions/             # Session notes - private learning journal
