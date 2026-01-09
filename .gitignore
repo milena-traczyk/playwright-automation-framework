@@ -1,32 +1,32 @@
 # === Node.js === #
-node_modules/              # NPM packages (~200-500MB) - never commit
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # === Playwright Test Results === #
-test-results/              # Test results (JSON, failures, traces)
-playwright-report/         # HTML test report
+test-results/
+playwright-report/
 playwright/.cache/
 
 # === Test Artifacts === #
-*.png                      # Screenshots from test failures
+*.png
 *.jpg
 *.jpeg
-videos/                    # Test recordings
-traces/                    # Playwright traces
-downloads/                 # Downloaded files during tests
+videos/
+traces/
+downloads/
 
 # === Allure Reports === #
 allure-results/
 allure-report/
 
 # === TypeScript === #
-dist/                      # Compiled JavaScript output
+dist/
 *.tsbuildinfo
 
 # === Environment Variables === #
-.env                       # Secrets, API keys - NEVER commit!
+.env
 .env.local
 .env.*.local
 
@@ -56,6 +56,5 @@ coverage/
 .nyc_output/
 
 # === Personal Notes (Private) === #
-docs/sessions/             # Session notes - private learning journal
-docs/interview-prep/       # Interview preparation materials - private study notes
-docs/sessions/session-02-2026-01-08.md
+docs/sessions/
+docs/interview-prep/
