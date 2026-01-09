@@ -9,7 +9,7 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
 
 ### ✅ Faza 1: Fundament (Foundation)
 **Czas nauki: 1-2 dni**
-**Status: W TRAKCIE (Session 1-3)**
+**Status: ✅ UKOŃCZONA (Session 1-3)**
 
 - [x] **1.1 Inicjalizacja projektu** ✅ (Session 1 & 2)
   - [x] Utworzenie package.json
@@ -19,12 +19,12 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
   - [x] Dokumentacja (README.md, claude.md, roadmap.md)
   - **Zrozumienie:** struktura projektu Node.js, tsconfig.json, git workflow
 
-- [ ] **1.2 Struktura folderów** (Session 3 - IN PROGRESS)
-  - [ ] playwright.config.ts
-  - [ ] Organizacja katalogów (tests/, src/pages/, src/fixtures/, src/utils/)
-  - [ ] Konwencje nazewnictwa
-  - [ ] Pierwszy prosty test (weryfikacja setupu)
-  - **Zrozumienie:** separacja odpowiedzialności, struktura projektu
+- [x] **1.2 Struktura folderów** ✅ (Session 3)
+  - [x] playwright.config.ts
+  - [x] Organizacja katalogów (tests/, src/pages/, src/fixtures/, src/utils/)
+  - [x] Konwencje nazewnictwa
+  - [x] Pierwszy prosty test (weryfikacja setupu)
+  - **Zrozumienie:** separacja odpowiedzialności, struktura projektu, fixtures, destructuring
 
 - [ ] **1.3 Konfiguracja narzędzi deweloperskich** (Opcjonalne - później)
   - [ ] ESLint dla jakości kodu
