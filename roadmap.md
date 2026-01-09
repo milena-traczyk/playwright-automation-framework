@@ -9,23 +9,28 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
 
 ### ✅ Faza 1: Fundament (Foundation)
 **Czas nauki: 1-2 dni**
+**Status: W TRAKCIE (Session 1-3)**
 
-- [ ] **1.1 Inicjalizacja projektu**
-  - Utworzenie package.json
-  - Konfiguracja TypeScript
-  - Instalacja Playwright
-  - Zrozumienie: struktura projektu Node.js, tsconfig.json
+- [x] **1.1 Inicjalizacja projektu** ✅ (Session 1 & 2)
+  - [x] Utworzenie package.json
+  - [x] Konfiguracja TypeScript (tsconfig.json)
+  - [x] Instalacja Playwright + browsers
+  - [x] Git setup (init, .gitignore, GitHub push)
+  - [x] Dokumentacja (README.md, claude.md, roadmap.md)
+  - **Zrozumienie:** struktura projektu Node.js, tsconfig.json, git workflow
 
-- [ ] **1.2 Struktura folderów**
-  - Organizacja katalogów (tests/, pages/, fixtures/, utils/)
-  - Konwencje nazewnictwa
-  - Zrozumienie: dlaczego separacja odpowiedzialności jest ważna
+- [ ] **1.2 Struktura folderów** (Session 3 - IN PROGRESS)
+  - [ ] playwright.config.ts
+  - [ ] Organizacja katalogów (tests/, src/pages/, src/fixtures/, src/utils/)
+  - [ ] Konwencje nazewnictwa
+  - [ ] Pierwszy prosty test (weryfikacja setupu)
+  - **Zrozumienie:** separacja odpowiedzialności, struktura projektu
 
-- [ ] **1.3 Konfiguracja narzędzi deweloperskich**
-  - ESLint dla jakości kodu
-  - Prettier dla formatowania
-  - Git hooks z Husky (opcjonalne)
-  - Zrozumienie: automatyzacja jakości kodu
+- [ ] **1.3 Konfiguracja narzędzi deweloperskich** (Opcjonalne - później)
+  - [ ] ESLint dla jakości kodu
+  - [ ] Prettier dla formatowania
+  - [ ] Git hooks z Husky (opcjonalne)
+  - **Zrozumienie:** automatyzacja jakości kodu
 
 ---
 
