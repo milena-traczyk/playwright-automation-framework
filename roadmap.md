@@ -9,7 +9,7 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
 
 ### ✅ Faza 1: Fundament (Foundation)
 **Czas nauki: 1-2 dni**
-**Status: ✅ UKOŃCZONA (Session 1-3)**
+**Status: ✅ UKOŃCZONA (Session 1-4)**
 
 - [x] **1.1 Inicjalizacja projektu** ✅ (Session 1 & 2)
   - [x] Utworzenie package.json
@@ -26,11 +26,11 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
   - [x] Pierwszy prosty test (weryfikacja setupu)
   - **Zrozumienie:** separacja odpowiedzialności, struktura projektu, fixtures, destructuring
 
-- [ ] **1.3 Konfiguracja narzędzi deweloperskich** (Opcjonalne - później)
-  - [ ] ESLint dla jakości kodu
-  - [ ] Prettier dla formatowania
-  - [ ] Git hooks z Husky (opcjonalne)
-  - **Zrozumienie:** automatyzacja jakości kodu
+- [x] **1.3 Konfiguracja narzędzi deweloperskich** ✅ (Session 4)
+  - [x] ESLint dla jakości kodu
+  - [x] Prettier dla formatowania
+  - [ ] Git hooks z Husky (pominięte - opcjonalne)
+  - **Zrozumienie:** automatyzacja jakości kodu, ESLint vs TypeScript strict, .gitignore format
 
 ---
 
