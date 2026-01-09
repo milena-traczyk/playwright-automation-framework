@@ -73,8 +73,14 @@ This file tracks progress in learning, important concepts, notes, and questions 
 
 #### At end of session:
 1. **Create session notes** in `docs/sessions/session-XX-YYYY-MM-DD.md`
-2. **Update roadmap.md** with completion notes
-3. **Update claude.md** with Q&A and notes
+   - Include: goals, what was done, challenges, Key Takeaways from user
+   - Add "Next Session" section with plan
+2. **Update roadmap.md** - MANDATORY
+   - Mark completed tasks with [x]
+   - Update phase status (✅ completed, 🔄 in progress)
+   - Add session number to completed items (e.g., "Session 2 - completed")
+   - Example: `- [x] **1.1 Inicjalizacja projektu** ✅ (Session 1 & 2)`
+3. **Update claude.md** with new Q&A, concepts, or code snippets if needed
 
 ### ✋ Command Execution
 - **ALWAYS ask before executing** commands (unless it's just reading files/checking status)
