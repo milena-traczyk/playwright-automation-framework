@@ -29,7 +29,7 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
 - [x] **1.3 Konfiguracja narzędzi deweloperskich** ✅ (Session 4)
   - [x] ESLint dla jakości kodu
   - [x] Prettier dla formatowania
-  - [ ] Git hooks z Husky (pominięte - opcjonalne)
+  - [ ] Git hooks z Husky (Session 5 - opcjonalne)
   - **Zrozumienie:** automatyzacja jakości kodu, ESLint vs TypeScript strict, .gitignore format
 
 ---

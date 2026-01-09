@@ -67,7 +67,11 @@ This file tracks progress in learning, important concepts, notes, and questions 
 1. **Read before editing** - Always read files before making changes
 2. **Follow existing patterns** - Adapt to code style and conventions in the project
 3. **Check the roadmap** - roadmap.md contains current priorities
-4. **NEVER skip tasks from roadmap** without your permission
+4. **NEVER skip tasks from roadmap** without user permission - including optional tasks!
+   - ⚠️ CRITICAL: Even if task is marked "(optional)" or "(opcjonalne)" - DO NOT skip it automatically
+   - Always ASK user: "This task is optional. Do you want to: A) Do it now, B) Skip it, C) Do it later?"
+   - NEVER decide on your own to skip optional tasks
+   - User wants to complete all roadmap items for learning purposes
 5. **If task unclear** - ASK before starting (don't guess)
 6. **If task seems wrong** - CHALLENGE with justification
 
