@@ -1,12 +1,16 @@
 import { test, expect } from '@playwright/test';
+import { LoginPage } from '../src/pages/LoginPage';
+import { DashboardPage } from '../src/pages/DashboardPage';
 
-test('should load OrangeHRM homepage', async ({ page }) => {
-    // Step 1: Navigate to homepage
-    await page.goto('/');
+test('should login to OrangeHRM successfully', async ({ page }) => {
+    // Arrange - Create page instances
+    const loginPage = new LoginPage(page);
+    const dashboardPage = new DashboardPage(page);
 
-    // Step 2: Verify page title contains "OrangeHRM"
-    await expect(page).toHaveTitle(/OrangeHRM/);
+    // Act - Navigate and login
+    await loginPage.navigateTo();
+    await loginPage.login('Admin', 'admin123');
 
-    // Step 3: Verify logo is visible
-    await expect(page.locator('.orangehrm-login-branding')).toBeVisible();
+    // Assert - Verify we're on dashboard (successful login)
+    await expect(dashboardPage.getUserDropdownLocator()).toBeVisible();
 });
