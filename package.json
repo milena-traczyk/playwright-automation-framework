@@ -13,7 +13,8 @@
     "report": "playwright show-report",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
-    "allure:report": "npm run allure:generate && npm run allure:open"
+    "allure:report": "npm run allure:generate && npm run allure:open",
+    "prepare": "husky"
   },
   "keywords": [
     "playwright",
@@ -34,9 +35,17 @@
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-playwright": "^2.4.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "playwright": "^1.57.0",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.52.0"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
