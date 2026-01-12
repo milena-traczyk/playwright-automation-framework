@@ -91,6 +91,12 @@ This file tracks progress in learning, important concepts, notes, and questions 
 - **YOU type and execute** commands - learning by practice
 - Exception: purely informational commands (read files, git status, ls)
 
+### 📚 Interview Preparation Command
+- When user writes `/interview [topic]` - add the topic/concept to interview prep materials
+- File location: `docs/interview-prep/` (separate files for different topics)
+- Format: Clear explanations with examples, ready for job interviews
+- Example: `/interview Page Object Model` → Add POM explanation to `docs/interview-prep/playwright-basics.md`
+
 ---
 
 ## 📖 Concepts - Detailed Notes
