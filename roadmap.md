@@ -26,34 +26,39 @@ Stworzenie wzorowego projektu testów automatycznych używającego najlepszych p
   - [x] Pierwszy prosty test (weryfikacja setupu)
   - **Zrozumienie:** separacja odpowiedzialności, struktura projektu, fixtures, destructuring
 
-- [x] **1.3 Konfiguracja narzędzi deweloperskich** ✅ (Session 4)
+- [x] **1.3 Konfiguracja narzędzi deweloperskich** ✅ (Session 4 & 5)
   - [x] ESLint dla jakości kodu
   - [x] Prettier dla formatowania
-  - [ ] Git hooks z Husky (Session 5 - opcjonalne)
+  - [x] Git hooks z Husky ✅ (Session 5)
   - **Zrozumienie:** automatyzacja jakości kodu, ESLint vs TypeScript strict, .gitignore format
 
 ---
 
-### ✅ Faza 2: Page Object Model (POM)
+### 🔄 Faza 2: Page Object Model (POM)
 **Czas nauki: 2-3 dni**
+**Status: 🔄 W TRAKCIE (Session 5-6)**
 
-- [ ] **2.1 Teoria POM**
+- [x] **2.1 Teoria POM** ✅ (Session 5)
   - Co to jest Page Object Model?
   - Zalety i wady POM
   - Kiedy używać POM vs Component Objects
   - Zrozumienie: separacja logiki testowej od implementacji UI
 
-- [ ] **2.2 Base Page Class**
-  - Wspólne metody dla wszystkich stron
-  - Navigation, waits, assertions
-  - Error handling
+- [x] **2.2 Base Page Class** ✅ (Session 5)
+  - [x] Wspólne metody dla wszystkich stron (goto, click, fill, getText)
+  - [x] Navigation
+  - [x] Auto-waiting w locatorach (Session 6)
+  - [ ] assertions
+  - [ ] Error handling
   - Zrozumienie: dziedziczenie w TypeScript, DRY principle
 
-- [ ] **2.3 Implementacja Page Objects**
-  - Login Page
-  - Dashboard Page
-  - Admin Module Pages
-  - Zrozumienie: enkapsulacja, gettery, fluent interface
+- [x] **2.3 Implementacja Page Objects** ✅ (Session 5-6)
+  - [x] Login Page (Session 5)
+  - [x] LoginPage - error message locators (Session 6)
+  - [x] Dashboard Page (Session 5)
+  - [x] Comprehensive login tests - positive, negative, empty fields (Session 6)
+  - [ ] Admin Module Pages
+  - Zrozumienie: enkapsulacja, gettery, fluent interface, Locator return types
 
 ---
 
