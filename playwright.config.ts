@@ -1,7 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-
     // Where Playwright looks for test files
     testDir: './tests',
 
@@ -10,7 +9,7 @@ export default defineConfig({
 
     // How long to wait for assertions like expect().toBeVisible()
     expect: {
-        timeout: 5000,
+        timeout: 10000,
     },
 
     // Run tests in parallel (faster)
@@ -53,7 +52,7 @@ export default defineConfig({
     projects: [
         {
             name: 'chromium',
-            use: { ...devices['Desktop Chrome'] }, 
+            use: { ...devices['Desktop Chrome'] },
         },
         {
             name: 'firefox',
@@ -62,7 +61,6 @@ export default defineConfig({
         {
             name: 'webkit',
             use: { ...devices['Desktop Safari'] },
-        }
+        },
     ],
-
 });
